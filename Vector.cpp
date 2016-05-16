@@ -42,7 +42,7 @@ template <class T> class Vector
             arr = newarr;
             space = newspace;
         }
-        void resize (newsize)
+        void resize (size_type newsize)
         {
             if (newsize == elemcount)
                 return;
