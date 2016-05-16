@@ -52,7 +52,7 @@ template <class T> class Vector
             elemcount = newsize;
             space = newsize;
         }
-        void push_back (T& newvalue)
+        void push_back (const T& newvalue)
         {
             if (space == elemcount)
                 reserve(space*2);
