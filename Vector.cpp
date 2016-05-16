@@ -61,7 +61,25 @@ template <class T> class Vector
             arr[elemcount] = newvalue;
             ++elemcount;
         }
-
+        
+        //memory access
+        iterator begin ()
+        {
+            return arr;
+        }
+        const_iterator begin () const
+        {
+            return arr;
+        }
+        iterator end ()
+        {
+            return arr+elemcount;
+        }
+        const_iterator end () const
+        {
+            return arr+elemcount;
+        }
+        
         //operators
         T& operator[](size_type i)
         {
