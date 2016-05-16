@@ -1,9 +1,11 @@
 template <class T> class Vector
 {
-    typedef T  value_type;
-    typedef T* iterator;
-    typedef const T* const_iterator;
-    typedef unsigned size_type;
+    public:
+        //types
+        typedef T  value_type;
+        typedef T* iterator;
+        typedef const T* const_iterator;
+        typedef unsigned size_type;
 
     private:
         size_type elemcount,space;
