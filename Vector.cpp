@@ -1,4 +1,4 @@
-template <class T> class Vector
+template <class T, class A = allocator<T>> class Vector
 {
     public:
         //types
@@ -10,6 +10,8 @@ template <class T> class Vector
     private:
         size_type elemcount,space;
         T* arr;
+        A alloc;
+        
         const static size_type memory_chunk = 8;
 
     public:
