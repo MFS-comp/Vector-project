@@ -49,6 +49,8 @@ template <class T> class Vector
             if (newsize == elemcount)
                 return;
             T* newarr = new T[newsize];
+            for (size_type i = 0; i < elemcount; ++i)
+                newarr[i] = arr[i];
             delete [] arr;
             arr = newarr;
             elemcount = newsize;
