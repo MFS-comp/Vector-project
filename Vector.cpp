@@ -32,7 +32,11 @@ template <class T> class Vector
         {
             return space;
         }
-
+        size_type free_capacity()
+        {
+            return space-elemcount;
+        }
+        
         //memory manipulation
         void reserve (size_type newspace)
         {
