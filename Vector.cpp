@@ -41,7 +41,7 @@ template <class T, class A = allocator<T>> class Vector
             if (newspace <= space)
                 return;
             T* newarr = new T[newspace];
-            for (size_type i = 0; i < newspace; ++i)
+            for (size_type i = 0; i < space; ++i)
                 newarr[i] = arr[i];
             delete [] arr;
             arr = newarr;
